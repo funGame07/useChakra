@@ -9,16 +9,19 @@ export const colorContext = createContext()
 
 function Home(){
     const {toggleColorMode} = useColorMode()
-
     const bg = useColorModeValue("gray.200", "gray.800")
+    const cardBg = useColorModeValue("gray.100", "gray.700")
+    
 
     const colorMode={
-        bg
+        toggleColorMode,
+        bg,
+        cardBg
     }
     
   return (
     <colorContext.Provider value={colorMode}>
-        <Grid minW="303px" h="100vh" templateRows="92% 8%" bg={bg} overflow="hidden">
+        <Grid minW="303px" h="100vh" templateRows="93% 7%" bg={bg} overflow="hidden">
             <GridItem h="100%" overflow="scroll"><Main /></GridItem>
             <GridItem h="100%"><Navbar/></GridItem>
         </Grid>

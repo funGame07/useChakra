@@ -1,8 +1,12 @@
 import { Container, Stack, Box, Heading, Flex, AbsoluteCenter, Image, StackDivider, Text } from '@chakra-ui/react'
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import React from 'react'
+import { useContext } from 'react'
+import { colorContext } from '../Home'
 
 const Main = () => {
+  const {cardBg} = useContext(colorContext)
+
   return (
     <div>
       <Stack>
@@ -36,7 +40,7 @@ const Main = () => {
           <CardBody>
             <Stack divider={<StackDivider/>} gap={[2,4]}>
               <Box>
-                <Card overflow={"hidden"} bg="gray.100" border={"1px"}>
+                <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
                   <Flex h={["65px" ,"80px"]}>
                     <Image src="absent.png" w={["40%", "30%", "30%", "30%"]} />
                     <CardBody p={[4,5]}>
@@ -48,7 +52,7 @@ const Main = () => {
               </Box>
 
               <Box>
-                <Card overflow={"hidden"} bg="gray.100" border={"1px"}>
+                <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
                   <Flex h={["65px" ,"80px"]}>
                     <Image src="money.png" w={["40%", "30%", "30%", "30%"]} />
                     <CardBody p={[4,5]}>
@@ -60,7 +64,7 @@ const Main = () => {
               </Box>
 
               <Box>
-                <Card overflow={"hidden"} bg="gray.100" border={"1px"}>
+                <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
                   <Flex h={["65px" ,"80px"]}>
                     <Image src="law.png" w={["40%", "30%", "30%", "30%"]}/>
                     <CardBody p={[4,5]}>
@@ -86,7 +90,7 @@ const Main = () => {
           <CardBody>
             <Stack divider={<StackDivider/>} gap={[2,4]}>
               <Box>
-                <Card overflow={"hidden"} bg="gray.100" border={"1px"}>
+                <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
                   <Flex h={["65px" ,"80px"]}>
                     <Image src="piket.webp" w={["40%", "30%", "30%", "30%"]} />
                     <CardBody p={[4,5]}>
@@ -97,7 +101,7 @@ const Main = () => {
               </Box>
 
               <Box>
-                <Card overflow={"hidden"} bg="gray.100" border={"1px"}>
+                <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
                   <Flex h={["65px" ,"80px"]}>
                     <Image src="caste.jpeg" w={["40%", "30%", "30%", "30%"]} />
                     <CardBody p={[4,5]}>
@@ -108,7 +112,7 @@ const Main = () => {
               </Box>
 
               <Box>
-                <Card overflow={"hidden"} bg="gray.100" border={"1px"}>
+                <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
                   <Flex h={["65px" ,"80px"]}>
                     <Image src="schedule.jpeg" w={["40%", "30%", "30%", "30%"]}/>
                     <CardBody p={[4,5]}>
