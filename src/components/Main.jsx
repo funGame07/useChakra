@@ -87,9 +87,9 @@ const Main = () => {
             <Stack divider={<StackDivider/>} gap={[2,4]}>
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
-                  <Flex h={["65px" ,"80px"]}>
+                  <Flex h={["60px" ,"80px"]}>
                     <Image src="piket.webp" w={["40%", "30%", "30%", "30%"]} />
-                    <CardBody p={[4,5]}>
+                    <CardBody p={[4,5]} display={"flex"} alignItems={"center"}>
                       <Heading size="sm" mt={0}>Class Cleanliness</Heading>
                     </CardBody>
                   </Flex> 
@@ -98,9 +98,9 @@ const Main = () => {
 
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
-                  <Flex h={["65px" ,"80px"]}>
+                  <Flex h={["60px" ,"80px"]}>
                     <Image src="schedule.jpeg" w={["40%", "30%", "30%", "30%"]}/>
-                    <CardBody p={[4,5]}>
+                    <CardBody p={[4,5]} display={"flex"} alignItems={"center"}>
                       <Heading size="sm" mt={0}>Class Schedule</Heading>
                     </CardBody>
                   </Flex>
@@ -120,9 +120,9 @@ const Main = () => {
 
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
-                  <Flex h={["65px" ,"80px"]}>
+                  <Flex h={["60px" ,"80px"]}>
                     <Image src="structure.png" w={["40%", "30%", "30%", "30%"]} />
-                    <CardBody p={[4,5]}>
+                    <CardBody p={[4,5]} display={"flex"} alignItems={"center"}>
                       <Heading size="sm" mt={0}>Class Organization</Heading>
                     </CardBody>
                   </Flex>
@@ -131,9 +131,9 @@ const Main = () => {
 
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
-                  <Flex h={["65px" ,"80px"]}>
+                  <Flex h={["60px" ,"80px"]}>
                     <Image src="teacher2.png" w={["40%", "30%", "30%", "30%"]}/>
-                    <CardBody p={[4,5]}>
+                    <CardBody p={[4,5]} display={"flex"} alignItems={"center"}>
                       <Heading size="sm" mt={0}>Teachers</Heading>
                     </CardBody>
                   </Flex>
