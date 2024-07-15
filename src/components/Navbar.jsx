@@ -1,11 +1,12 @@
 import { Box, Stack, Flex, Image, Button, AbsoluteCenter, useToast } from "@chakra-ui/react"
-import { FiChevronsLeft, FiMoon, FiSun } from "react-icons/fi";
+import { FiMoon, FiSun } from "react-icons/fi";
 import { FaHome } from "react-icons/fa";
+import { BsFullscreen, BsFullscreenExit } from "react-icons/bs";
 import { colorContext } from "../Home";
 import { useContext } from "react";
 
 const Navbar = () => {
-  const {toggleColorMode, bg} = useContext(colorContext)
+  const {toggleColorMode, bg, handle, fs, setFs} = useContext(colorContext)
   const toast = useToast()
   function clicked(){
     return toast({
@@ -16,13 +17,19 @@ const Navbar = () => {
     })
   }
 
+  function fScreen(){
+    setFs(!fs)
+    return fs ? handle.exit() : handle.enter()
+  }
+
 
   return (
     <Box h="100%" borderTop={"2px"} borderColor={"#ECECEC"}>
       <Flex alignItems={"center"} boxSize={"100%"} justify={"space-around"}>
         <Box>
-          <Button border="0" sx={{':focus': { outline: 'none'}}} bg={bg}>
-            <FiChevronsLeft size={30}/>
+          <Button border="0" sx={{':focus': { outline: 'none'}}} bg={bg}
+          onClick={fScreen}>
+            {fs ? <BsFullscreenExit size={30}/>: <BsFullscreen size={30}/>}
           </Button>
         </Box>
         <Box position={"relative"}>
