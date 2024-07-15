@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <div>
       <Stack>
-      <Container w="100%" h="100vh" p={3}>
+      <Container w="95%" h="100vh" p={3}>
         <Box mt={["20%" ,"10%"]} mb="10%">
           <Card>
             <Flex h={["50px" ,"70px"]} justify={"space-around"} px="2" alignItems={"center"}>
@@ -78,7 +78,7 @@ const Main = () => {
           </CardBody>
         </Card>
 
-        <Card mt="15%">
+        <Card mt="10%">
           <CardHeader>
             <Heading size="md">Daily</Heading>
           </CardHeader>
@@ -110,7 +110,7 @@ const Main = () => {
           </CardBody>
         </Card>
 
-        <Card mt="15%">
+        <Card mt="10%">
           <CardHeader>
             <Heading size="md">Others</Heading>
           </CardHeader>
@@ -121,7 +121,7 @@ const Main = () => {
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
                   <Flex h={["65px" ,"80px"]}>
-                    <Image src="caste.jpeg" w={["40%", "30%", "30%", "30%"]} />
+                    <Image src="structure.png" w={["40%", "30%", "30%", "30%"]} />
                     <CardBody p={[4,5]}>
                       <Heading size="sm" mt={0}>Class Organization</Heading>
                     </CardBody>
@@ -132,7 +132,7 @@ const Main = () => {
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
                   <Flex h={["65px" ,"80px"]}>
-                    <Image src="schedule.jpeg" w={["40%", "30%", "30%", "30%"]}/>
+                    <Image src="teacher2.png" w={["40%", "30%", "30%", "30%"]}/>
                     <CardBody p={[4,5]}>
                       <Heading size="sm" mt={0}>Teachers</Heading>
                     </CardBody>
