@@ -92,7 +92,7 @@ const Main = () => {
                     <CardBody p={[4,5]}>
                       <Heading size="sm" mt={0}>Class Cleanliness</Heading>
                     </CardBody>
-                  </Flex>
+                  </Flex> 
                 </Card>
               </Box>
 
