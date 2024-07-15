@@ -10,8 +10,8 @@ const Main = () => {
   return (
     <div>
       <Stack>
-      <Container w="95%" h="100vh" p={3} display={"flex"} flexDirection={"column"} >
-        <Box mt={["20%" ,"10%"]} mb="10%" w="85%" placeSelf={"center"}>
+      <Container w="95%" h="100vh" p={3}>
+        <Box mt={["20%" ,"10%"]} mb="10%" >
           <Card>
             <Flex h={["50px" ,"70px"]} justify={"space-around"} px="2" alignItems={"center"}>
               <CardHeader>
@@ -20,7 +20,7 @@ const Main = () => {
               
               <CardBody>
                 <AbsoluteCenter>
-                  <Image src="class.png" borderRadius={"full"} w={100} h={100} border={"1px"}/>
+                  <Image src="class.png" borderRadius={"full"} w={120} h={120} border={"1px"}/>
                 </AbsoluteCenter>
               </CardBody>
               
