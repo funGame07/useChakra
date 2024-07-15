@@ -5,6 +5,7 @@ function App() {
   return(
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<a href="/home">here</a>}/>
         <Route path="/home" element={<Home/>}/>
       </Routes>
     </BrowserRouter>
