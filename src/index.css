@@ -2,6 +2,14 @@
   display: none;
 }
 
+html{
+  height: -webkit-fill-available;
+}
+
+body{
+  height: -webkit-fill-available;
+}
+
 p{
   font-size: 13px;
 }
