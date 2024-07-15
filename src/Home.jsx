@@ -27,7 +27,7 @@ function Home(){
   return (
     <colorContext.Provider value={colorMode}>
       <FullScreen handle={handle}>
-        <Grid minW="303px" h="100vh" templateRows="93% 7%" bg={bg} overflow="hidden" id="fs">
+        <Grid minW="303px" h="100vh" templateRows={["83% 7% 10%" ,"93% 7%"]} bg={bg} overflow="hidden" id="fs">
             <GridItem h="100%" overflow="scroll"><Main /></GridItem>
             <GridItem h="100%"><Navbar/></GridItem>
         </Grid>
