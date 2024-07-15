@@ -11,7 +11,7 @@ const Main = () => {
     <div>
       <Stack>
       <Container w="99%" h="100vh" p={3}>
-        <Box mt={["25%" ,"10%"]} mb="10%" >
+        <Box mt={["20%" ,"10%"]} mb="10%" >
           <Card>
             <Flex h={["50px" ,"70px"]} justify={"space-around"} px="2" alignItems={"center"}>
               <CardHeader>
@@ -32,7 +32,7 @@ const Main = () => {
           </Card>
         </Box>
 
-        <Card mt="10%">
+        <Card mt="13%">
           <CardHeader>
             <Heading size="md">Activities</Heading>
           </CardHeader>
