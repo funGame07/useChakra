@@ -11,7 +11,7 @@ export const colorContext = createContext()
 function Home(){
     const {toggleColorMode} = useColorMode()
     const bg = useColorModeValue("gray.200", "gray.900")
-    const cardBg = useColorModeValue("gray.100", "blue.800")
+    const cardBg = useColorModeValue("green.400", "blue.800")
     const handle = useFullScreenHandle()
     const [fs, setFs] = useState(false)
 

@@ -34,7 +34,7 @@ const Navbar = () => {
         </Box>
         <Box position={"relative"}>
           <AbsoluteCenter top={-2}>
-            <Button py={7} px={3} bg={bg == "gray.200" ? "#D69C48":"#1A2434"} borderRadius={"25px"} 
+            <Button py={7} px={3} bg={bg == "gray.200" ? "green.500":"#1A2434"} borderRadius={"25px"} 
               borderTopRightRadius={0} borderBottomLeftRadius={0} boxShadow={"dark-lg"}
               border={"1px"} colorScheme="teal" color={bg == "gray.200" ? "black":"white"}
               onClick={clicked}>

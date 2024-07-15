@@ -10,8 +10,8 @@ const Main = () => {
   return (
     <div>
       <Stack>
-      <Container w="95%" h="100vh" p={3}>
-        <Box mt={["20%" ,"10%"]} mb="10%">
+      <Container w="95%" h="100vh" p={3} display={"flex"} flexDirection={"column"} >
+        <Box mt={["20%" ,"10%"]} mb="10%" w="85%" placeSelf={"center"}>
           <Card>
             <Flex h={["50px" ,"70px"]} justify={"space-around"} px="2" alignItems={"center"}>
               <CardHeader>
@@ -87,10 +87,11 @@ const Main = () => {
             <Stack divider={<StackDivider/>} gap={[2,4]}>
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
-                  <Flex h={["60px" ,"80px"]}>
+                  <Flex h={["65px" ,"80px"]}>
                     <Image src="piket.webp" w={["40%", "30%", "30%", "30%"]} />
-                    <CardBody p={[4,5]} display={"flex"} alignItems={"center"}>
+                    <CardBody p={[4,5]}>
                       <Heading size="sm" mt={0}>Class Cleanliness</Heading>
+                      <Text>Monday-Saturday</Text>
                     </CardBody>
                   </Flex> 
                 </Card>
@@ -98,10 +99,11 @@ const Main = () => {
 
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
-                  <Flex h={["60px" ,"80px"]}>
+                  <Flex h={["65px" ,"80px"]}>
                     <Image src="schedule.jpeg" w={["40%", "30%", "30%", "30%"]}/>
-                    <CardBody p={[4,5]} display={"flex"} alignItems={"center"}>
+                    <CardBody p={[4,5]}>
                       <Heading size="sm" mt={0}>Class Schedule</Heading>
+                      <Text>Monday-Saturday</Text>
                     </CardBody>
                   </Flex>
                 </Card>
@@ -120,10 +122,11 @@ const Main = () => {
 
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
-                  <Flex h={["60px" ,"80px"]}>
+                  <Flex h={["65px" ,"80px"]}>
                     <Image src="structure.png" w={["40%", "30%", "30%", "30%"]} />
-                    <CardBody p={[4,5]} display={"flex"} alignItems={"center"}>
+                    <CardBody p={[4,5]} >
                       <Heading size="sm" mt={0}>Class Organization</Heading>
+                      <Text>Organization Structure</Text>
                     </CardBody>
                   </Flex>
                 </Card>
@@ -131,10 +134,11 @@ const Main = () => {
 
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
-                  <Flex h={["60px" ,"80px"]}>
+                  <Flex h={["65px" ,"80px"]}>
                     <Image src="teacher2.png" w={["40%", "30%", "30%", "30%"]}/>
-                    <CardBody p={[4,5]} display={"flex"} alignItems={"center"}>
+                    <CardBody p={[4,5]}>
                       <Heading size="sm" mt={0}>Teachers</Heading>
+                      <Text>XII IPS I's Teacher</Text>
                     </CardBody>
                   </Flex>
                 </Card>
