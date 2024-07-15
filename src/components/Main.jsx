@@ -78,11 +78,7 @@ const Main = () => {
           </CardBody>
         </Card>
 
-
-
-
-
-        <Card mt="10%" mb="50%">
+        <Card mt="15%">
           <CardHeader>
             <Heading size="md">Daily</Heading>
           </CardHeader>
@@ -103,6 +99,28 @@ const Main = () => {
               <Box>
                 <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
                   <Flex h={["65px" ,"80px"]}>
+                    <Image src="schedule.jpeg" w={["40%", "30%", "30%", "30%"]}/>
+                    <CardBody p={[4,5]}>
+                      <Heading size="sm" mt={0}>Class Schedule</Heading>
+                    </CardBody>
+                  </Flex>
+                </Card>
+              </Box>
+            </Stack>
+          </CardBody>
+        </Card>
+
+        <Card mt="15%">
+          <CardHeader>
+            <Heading size="md">Others</Heading>
+          </CardHeader>
+          
+          <CardBody>
+            <Stack divider={<StackDivider/>} gap={[2,4]}>
+
+              <Box>
+                <Card overflow={"hidden"} border={"1px"} bg={cardBg}>
+                  <Flex h={["65px" ,"80px"]}>
                     <Image src="caste.jpeg" w={["40%", "30%", "30%", "30%"]} />
                     <CardBody p={[4,5]}>
                       <Heading size="sm" mt={0}>Class Organization</Heading>
@@ -116,7 +134,7 @@ const Main = () => {
                   <Flex h={["65px" ,"80px"]}>
                     <Image src="schedule.jpeg" w={["40%", "30%", "30%", "30%"]}/>
                     <CardBody p={[4,5]}>
-                      <Heading size="sm" mt={0}>Class Schedule</Heading>
+                      <Heading size="sm" mt={0}>Teachers</Heading>
                     </CardBody>
                   </Flex>
                 </Card>
