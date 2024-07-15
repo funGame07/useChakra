@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <div>
       <Stack>
-      <Container w="95%" h="100vh" p={3}>
+      <Container w="99%" h="100vh" p={3}>
         <Box mt={["20%" ,"10%"]} mb="10%" >
           <Card>
             <Flex h={["50px" ,"70px"]} justify={"space-around"} px="2" alignItems={"center"}>
